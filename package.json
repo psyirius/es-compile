@@ -1,0 +1,31 @@
+{
+  "name": "es-compile",
+  "version": "0.0.1",
+  "description": "Adobe's ExtendScript Compiler",
+  "license": "Apache-2.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": {
+    "name": "psyirius"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "mocha",
+    "postinstall": "npx tsup"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+    "@esdebug/esdebugger-core": "github:psyirius/esdebugger-core#248926f0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.18.40",
+    "@types/mocha": "^10.0.1",
+    "@types/chai": "^4.3.4",
+    "typescript": "^5.0.2",
+    "mocha": "^10.2.0",
+    "chai": "^4.3.7",
+    "tsup": "^6.7.0"
+  }
+}
